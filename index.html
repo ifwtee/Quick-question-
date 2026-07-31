@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>A Quick Question 🤍</title></head><body style="font-family:Arial;background:#0b0b0b;color:#fff;display:flex;justify-content:center;align-items:center;height:100vh"><div id="q"><h2>Do you want money? 💸</h2><button id="yes">Yes</button> <button id="no">No</button></div><div id="r" style="display:none"><h2>😂😂</h2><p>Thank you 🤍<br><br>I knew you'd end up pressing <b>No</b> i also dont have money. 😂</p></div><script>
+const y=document.getElementById('yes'),n=document.getElementById('no'),q=document.getElementById('q'),r=document.getElementById('r');
+function m(){y.style.position='fixed';y.style.left=Math.random()*(innerWidth-80)+'px';y.style.top=Math.random()*(innerHeight-40)+'px';}
+y.onmouseover=m;y.ontouchstart=(e)=>{e.preventDefault();m();};
+n.onclick=()=>{q.style.display='none';r.style.display='block';};
+</script></body></html>
